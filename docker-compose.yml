@@ -4,6 +4,8 @@ services:
     networks:
       - localdb
     build: .
+    volumes:
+      - ./views:/app/views
     ports:
       - 1993:1993
     container_name: deno
