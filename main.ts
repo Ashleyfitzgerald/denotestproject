@@ -17,7 +17,7 @@ function buildApp() {
 
     app.get("showbutt",  async (c) => {
         const butts = await database.getButt();
-        return c.render(await handleBars.renderView('showbutt', { buttcount: butts }));
+        return await handleBars.renderView('showbutt', { buttcount: butts });
     });
 
     app.start({ port: 1993 });
