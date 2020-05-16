@@ -1,5 +1,4 @@
-import { Application } from "https://deno.land/x/abc/mod.ts";
-import { Handlebars } from 'https://deno.land/x/handlebars/mod.ts'
+import { Application, Handlebars } from "./deps.ts";
 import { Db } from "./mongo.ts";
 
 const database = new Db;

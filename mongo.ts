@@ -1,14 +1,10 @@
-import { init, MongoClient } from 'https://deno.land/x/mongo@v0.6.0/mod.ts';
+import { init, MongoClient } from './deps.ts';
 
 class Db {
     private buttId: string = 'buttID';
     private initialised: boolean = false;
     private collection: any;
-
-    // Initialize the plugin
-    constructor() {
-    }
-
+    
     public async initialise() {
         console.log('doing a connect');
 
