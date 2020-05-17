@@ -6,6 +6,7 @@ services:
     build: .
     volumes:
       - ./views:/app/views
+      - ./static:/app/static
     ports:
       - 1993:1993
     container_name: deno

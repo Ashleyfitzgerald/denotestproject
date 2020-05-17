@@ -9,6 +9,8 @@ const prm = database.initialise();
 prm.then(buildApp);
 
 function buildApp() {
+    app.static("/assets", "static");
+
     app.get("/morebutt", (c) => {
         database.incrementButts();
         return "Butts incremented";

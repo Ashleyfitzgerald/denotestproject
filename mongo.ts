@@ -4,7 +4,7 @@ class Db {
     private buttId: string = 'buttID';
     private initialised: boolean = false;
     private collection: any;
-    
+
     public async initialise() {
         console.log('doing a connect');
 
